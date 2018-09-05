@@ -1,6 +1,6 @@
 node{
   stage('DisplayVars'){
-    echo env.WORKSPACE
-    sh "echo $BUILD_NUMBER"
+    echo "WORKSPACE : "env.WORKSPACE
+    sh "echo 'BUILD_NEMBER :' $BUILD_NUMBER"
   }
 }
