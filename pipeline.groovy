@@ -1,6 +1,6 @@
 node{
   stage('Hello'){
-    echo "Hello Benoit. This is a test from Git modif"
-    sh 'touch toto'
+    echo env.WORKSPACE
+    sh "echo $GIT_BRANCH"
   }
 }
