@@ -1,6 +1,6 @@
 node{
   stage('Hello'){
     echo env.WORKSPACE
-    sh "echo $GIT_BRANCH"
+    sh "echo $BUILD_NUMBER"
   }
 }
